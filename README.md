@@ -1,50 +1,113 @@
-# Welcome to your Expo app 👋
+# To-do List em React Native com Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+App mobile de tarefas com gestos, animação e dados salvos no aparelho.
 
-## Get started
+<p align="center">
+  <img src="docs/preview.webp" alt="Tarefas no celular" width="900">
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Sumário
 
-2. Start the app
+- [Visão geral](#visão-geral)
+- [Telas](#telas)
+- [Stack e versões](#stack-e-versões)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Primeiros passos](#primeiros-passos)
+- [Scripts](#scripts)
+- [Autor](#autor)
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Visão geral
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Aplicativo de tarefas feito com React Native e Expo para praticar os fundamentos do desenvolvimento mobile: componentes nativos e FlatList, input controlado, gesto de arrastar para apagar com animação, safe areas, ícone e splash screen, comportamento diferente por plataforma (Android, iOS e Web) e persistência com AsyncStorage.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Principais funcionalidades:
 
-## Get a fresh project
+- Gesto de arrastar com animação
+- Dados salvos com AsyncStorage
+- Roda em Android, iOS e Web
 
-When you're ready, run:
+Concluído em 05/2025.
 
-```bash
-npm run reset-project
+---
+
+## Telas
+
+Todas as telas usam dados fictícios.
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/tela-01.webp" alt="Componente com gesto de arrastar e animação"><br><sub>Componente com gesto de arrastar e animação</sub></td>
+  </tr>
+</table>
+
+---
+
+## Stack e versões
+
+| Categoria | Tecnologia | Versão |
+| --- | --- | --- |
+| Linguagem | TypeScript | 5.8 |
+| UI | React | 19.0 |
+| Mobile | Expo + React Native | 53.0 / 0.79 |
+| Rotas | Expo Router | 5.0 |
+| Animação | Reanimated | 3.17 |
+| Gestos | Gesture Handler | 2.24 |
+| Persistência | AsyncStorage | 2.1 |
+| Qualidade | ESLint + Prettier | 9.25 / 3.5 |
+
+As versões exatas estão no `package.json`.
+
+---
+
+## Estrutura do projeto
+
+```
+app/
+  _layout.tsx
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## Primeiros passos
 
-To learn more about developing your project with Expo, look at the following resources:
+### Pré-requisitos
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Node.js 18 ou mais recente
+- npm
+- App **Expo Go** no celular, ou um emulador Android/iOS
 
-## Join the community
+### Instalação
 
-Join our community of developers creating universal apps.
+```bash
+git clone https://github.com/marcospsdev/To-do-List-in-React-Native.git
+cd To-do-List-in-React-Native
+npm install
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Leia o QR code com o Expo Go (Android) ou a câmera (iOS). Para a versão web, aperte `w` no terminal.
+
+---
+
+## Scripts
+
+| Comando | Descrição |
+| --- | --- |
+| `npm start` | Inicia o Expo (QR code para o Expo Go) |
+| `npm run android` | Abre no emulador ou aparelho Android |
+| `npm run ios` | Abre no simulador iOS |
+| `npm run web` | Abre a versão web no navegador |
+| `npm run lint` | Analisa o código com o ESLint |
+
+---
+
+## Autor
+
+**Marcos Paulo** · Desenvolvedor Full-Stack
+
+- LinkedIn: [in/marcospsdev](https://www.linkedin.com/in/marcospsdev)
+- GitHub: [@marcospsdev](https://github.com/marcospsdev)
