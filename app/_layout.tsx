@@ -55,7 +55,7 @@ export default function RootLayout() {
   }, [tasks]);
 
   const addTask = () => {
-    const newTask = { id: tasks.length + 1, completed: false, text: text };
+    const newTask = { id: Date.now(), completed: false, text: text };
     setTasks([...tasks, newTask]);
     setText("");
   };

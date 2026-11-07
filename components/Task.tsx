@@ -28,7 +28,7 @@ export default function Task({
         toValue: 500,
         duration: 300,
         useNativeDriver: true,
-      }).start(() => deleteTask);
+      }).start(() => deleteTask());
     }
   };
 
